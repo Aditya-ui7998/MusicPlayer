@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="music-box">
+            <nav>
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                </div>
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </div>
+            </nav>
+            <img src="468-thumbnail.png" class="song-img">
+            <h1>Tera Yaar hu mai</h1>
+            <p>Artist Unknow</p>
+            <audio  id="song">
+                <source src="Tera Yaar Hoon Main(PagalWorld.com.pe).mp3" type="audio/mpeg">
+            </audio>
+            <!-- <audio  id="song2">
+                <source src="Despacito_320(PagalWorld).mp3" type="audio/mpeg">
+            </audio> -->
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <i class="fa-solid fa-caret-left luis" onclick="previousSong()"></i>
+
+          
+                <i class="fa-solid fa-play luis" id="icon" onclick="playPause()"></i>
+
+                <i class="fa-solid fa-caret-right luis" onclick="nextSong()"></i>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
